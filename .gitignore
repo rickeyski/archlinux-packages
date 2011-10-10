@@ -11,4 +11,8 @@
 *.run
 *.deb
 *.rpm
+*.jar
+*.war
+*.ear
+*.rar
 
