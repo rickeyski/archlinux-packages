@@ -10,12 +10,8 @@ license=('LGPL2.1')
 depends=('java-environment>=6' 'bash')
 changelog=Changelog
 conflicts=('byteman-git')
-source=(http://downloads.jboss.org/$pkgname/$pkgver/$pkgname-download-$pkgver-bin.zip
-        byteman.profile
-        byteman.profile.csh)
-md5sums=('c21d2ef28d9f0e6a4253eeb1f910440f'
-         '6c5ba0fd39c7bd34717add904b24dc42'
-         '6943ef06e64d130207b46a31b9646db0')
+source=(http://downloads.jboss.org/$pkgname/$pkgver/$pkgname-download-$pkgver-bin.zip)
+md5sums=('c21d2ef28d9f0e6a4253eeb1f910440f')
 
 package() {
   msg2 "Install the assembly at /usr/share/java/${pkgname}..."
@@ -23,8 +19,13 @@ package() {
   cp -r ${srcdir}/${pkgname}-download-${pkgver}/* ${pkgdir}/usr/share/java/$pkgname
 
   msg2 "Set up the BYTEMAN_HOME environment variable in /etc/profile.d..."
-  install -Dm755 ${srcdir}/${pkgname}.profile     ${pkgdir}/etc/profile.d/${pkgname}.sh
-  install -Dm755 ${srcdir}/${pkgname}.profile.csh ${pkgdir}/etc/profile.d/${pkgname}.csh
+  install -dm755 ${pkgdir}/etc/profile.d/
+  cat <<EOF > ${pkgdir}/etc/profile.d/${pkgname}.sh
+export BYTEMAN_HOME=/usr/share/java/${pkgname}
+EOF
+  cat <<EOF > ${pkgdir}/etc/profile.d/${pkgname}.csh
+setenv BYTEMAN_HOME "/usr/share/java/${pkgname}"
+EOF
 
   msg2 "Install links to the documentation resources at /usr/share/doc/${pkgname}..."
   install -dm755                          ${pkgdir}/usr/share/doc/${pkgname}
