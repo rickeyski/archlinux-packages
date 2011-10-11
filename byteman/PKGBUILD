@@ -2,7 +2,7 @@
 # Source: https://github.com/nicoulaj/archlinux-packages
 pkgname=byteman
 pkgver=1.6.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Inject side effects into Java programs for the purpose of tracing and testing application behaviour."
 arch=(i686 x86_64)
 url="http://www.jboss.org/byteman"
