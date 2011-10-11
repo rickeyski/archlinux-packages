@@ -14,7 +14,7 @@ md5sums=('5b0f47c8838aa7525f454f2bca9dbed9')
 
 package() {
   msg2 "Install the assembly at /usr/share/java/${pkgname}..."
-  install -dm755                                  ${pkgdir}/usr/share/java/${pkgname}
+  install -dm755                         ${pkgdir}/usr/share/java/${pkgname}
   cp -r ${srcdir}/${pkgname}-${pkgver}/* ${pkgdir}/usr/share/java/$pkgname
 
   msg2 "Install links to documentation resources at /usr/share/doc/${pkgname}..."
@@ -23,7 +23,7 @@ package() {
   ln -s /usr/share/java/${pkgname}/examples   ${pkgdir}/usr/share/doc/${pkgname}/
 
   msg2 "Install links to copyright resources at /usr/share/licenses/${pkgname}..."
-  install -dm755                          ${pkgdir}/usr/share/licenses/${pkgname}
+  install -dm755                               ${pkgdir}/usr/share/licenses/${pkgname}
   ln -s /usr/share/java/${pkgname}/LICENSE.txt ${pkgdir}/usr/share/licenses/${pkgname}/
   ln -s /usr/share/java/${pkgname}/NOTICE.txt  ${pkgdir}/usr/share/licenses/${pkgname}/
 
