@@ -9,6 +9,7 @@ url="http://www.jboss.org/byteman"
 license=('LGPL2.1')
 depends=('java-environment>=6' 'bash')
 changelog=Changelog
+conflicts=('byteman-git')
 source=(http://downloads.jboss.org/$pkgname/$pkgver/$pkgname-download-$pkgver-bin.zip
         byteman.profile
         byteman.profile.csh)
