@@ -13,6 +13,7 @@ source=(http://search.maven.org/remotecontent?filepath=org/sonatype/maven/shell/
 md5sums=('5b0f47c8838aa7525f454f2bca9dbed9')
 
 package() {
+
   msg2 "Install the assembly at /usr/share/java/${pkgname}..."
   install -dm755                         ${pkgdir}/usr/share/java/${pkgname}
   cp -r ${srcdir}/${pkgname}-${pkgver}/* ${pkgdir}/usr/share/java/$pkgname

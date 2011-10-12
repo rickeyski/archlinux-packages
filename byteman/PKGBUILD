@@ -14,9 +14,10 @@ source=(http://downloads.jboss.org/$pkgname/$pkgver/$pkgname-download-$pkgver-bi
 md5sums=('c21d2ef28d9f0e6a4253eeb1f910440f')
 
 package() {
+
   msg2 "Install the assembly at /usr/share/java/${pkgname}..."
   install -dm755                                  ${pkgdir}/usr/share/java/${pkgname}
-  cp -r ${srcdir}/${pkgname}-download-${pkgver}/* ${pkgdir}/usr/share/java/$pkgname
+  cp -r ${srcdir}/${pkgname}-download-${pkgver}/* ${pkgdir}/usr/share/java/${pkgname}
 
   msg2 "Set up the BYTEMAN_HOME environment variable in /etc/profile.d..."
   install -dm755 ${pkgdir}/etc/profile.d/
@@ -39,6 +40,7 @@ EOF
   ln -s /usr/share/java/${pkgname}/bin/bminstall.sh ${pkgdir}/usr/bin/bminstall
   ln -s /usr/share/java/${pkgname}/bin/bmjava.sh    ${pkgdir}/usr/bin/bmjava
   ln -s /usr/share/java/${pkgname}/bin/bmsubmit.sh  ${pkgdir}/usr/bin/bmsubmit
+
 }
 
 # vim:set ts=2 sw=2 et:
