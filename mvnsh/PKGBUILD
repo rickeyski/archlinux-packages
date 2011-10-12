@@ -3,7 +3,7 @@
 pkgname=mvnsh
 pkgver=1.0.1
 pkgrel=1
-pkgdesc="Interactive CLI interface for Apache Maven."
+pkgdesc="Maven Shell is an interactive CLI interface for Apache Maven."
 arch=(i686 x86_64)
 url="http://shell.sonatype.org"
 license=('EPL')
