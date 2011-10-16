@@ -2,7 +2,7 @@
 # Source: https://github.com/nicoulaj/archlinux-packages
 pkgname=mbeancmd
 pkgver=2.2.2
-pkgrel=4
+pkgrel=5
 pkgdesc="A command-line tool written in Java for interacting with MBeans on any J2EE server."
 arch=(i686 x86_64)
 url="http://wiki.jasmine.ow2.org/xwiki/bin/view/Documentation/MBeanCmd"
@@ -24,6 +24,7 @@ package() {
 #!/bin/sh
 "\$JAVA_HOME/bin/java" -jar '/usr/share/java/${pkgname}/${pkgname}.jar' "\$@"
 EOF
+  chmod 755 "${pkgdir}/usr/bin/${pkgname}"
 
 }
 

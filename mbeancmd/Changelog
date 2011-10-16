@@ -1,5 +1,10 @@
 2011-10-12 Julien Nicoulaud <julien.nicoulaud@gmail.com>
 
+	* 2.2.2-5 :
+	Fixed script not executable.
+
+2011-10-12 Julien Nicoulaud <julien.nicoulaud@gmail.com>
+
 	* 2.2.2-4 :
 	Inline script creation.
 
