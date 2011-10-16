@@ -2,7 +2,7 @@
 # Source: https://github.com/nicoulaj/archlinux-packages
 pkgname=jmeter-plugins
 pkgver=0.4.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Custom set of plugins for Apache JMeter."
 arch=(i686 x86_64)
 url="http://code.google.com/p/jmeter-plugins"
@@ -41,6 +41,7 @@ package() {
 #!/bin/sh
 "\$JAVA_HOME/bin/java" -jar '/opt/jmeter/lib/ext/JMeterPluginsCMD.jar' "\$@"
 EOF
+  chmod 755 "${pkgdir}/usr/bin/${pkgname}"
 
 }
 
