@@ -13,5 +13,4 @@ TODO
 * leechr
 * play-framework
 * pylan
-* power-play-switcher
 
