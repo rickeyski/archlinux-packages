@@ -11,6 +11,5 @@ TODO
 * gcviewer
 * geppetto
 * leechr
-* play-framework
 * pylan
 
