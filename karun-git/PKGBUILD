@@ -30,7 +30,7 @@ build() {
 
   msg2 "Building..."
   cd "${srcdir}/${_gitname}"
-  ant
+  ant || return 1
   
   msg2 "Generate desktop application entry..."
   cat > "${srcdir}"/${_pkgname}.desktop << EOF
@@ -48,9 +48,9 @@ EOF
   msg2 "Generate launcher script..."
   cat <<EOF > "${srcdir}"/${_pkgname}.sh
 #!/bin/sh
-"\$JAVA_HOME/bin/java" \
-  -cp /usr/share/java/commons-io/commons-io.jar:/usr/share/java/commons-lang/commons-lang.jar:/usr/share/java/commons-compress/commons-compress.jar:/usr/share/java/${_pkgname}/${_pkgname}.jar \
-  com.bahmanm.karun.Karun \
+"\$JAVA_HOME/bin/java" \\
+  -cp /usr/share/java/commons-io/commons-io.jar:/usr/share/java/commons-lang/commons-lang.jar:/usr/share/java/commons-compress/commons-compress.jar:/usr/share/java/${_pkgname}/${_pkgname}.jar \\
+  com.bahmanm.karun.Karun \\
   "\$@"
 EOF
 
