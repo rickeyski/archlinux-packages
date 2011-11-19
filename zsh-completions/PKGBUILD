@@ -3,7 +3,7 @@
 pkgname=zsh-completions
 pkgver=0.1.0
 pkgrel=1
-pkgdesc="Additional completion definitions for Zsh"
+pkgdesc="Additional completion definitions for Zsh."
 arch=(any)
 url="https://github.com/zsh-users/zsh-completions"
 license=(unknown)
