@@ -11,7 +11,7 @@ depends=(zsh)
 changelog=Changelog
 provides=('zsh-completions-git' 'zsh-virtualbox' 'zsh-packagekit' 'zsh-yaourt')
 conflicts=('zsh-completions-git' 'zsh-virtualbox' 'zsh-packagekit' 'zsh-yaourt')
-source=("https://github.com/zsh-users/${pkgname}/tarball/${pkgver}")
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/zsh-users/${pkgname}/tarball/${pkgver}")
 md5sums=('5bd2e42718e19561e6bb9a863023aa70')
 
 package() {

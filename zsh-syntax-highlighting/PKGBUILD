@@ -11,7 +11,7 @@ depends=(zsh)
 install=zsh-syntax-highlighting.install
 changelog=Changelog
 conflicts=(zsh-syntax-highlighting-git)
-source=("https://github.com/zsh-users/${pkgname}/tarball/${pkgver}")
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/zsh-users/${pkgname}/tarball/${pkgver}")
 md5sums=('dfe6dc4b33d96918204212a0db9d814b')
 
 package() {
