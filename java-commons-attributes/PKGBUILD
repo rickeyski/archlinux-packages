@@ -3,7 +3,7 @@
 pkgname=java-commons-attributes
 pkgver=2.2
 pkgrel=1
-pkgdesc='Enables Java programmers to use C#/.Net-style attributes in their code.'
+pkgdesc='Enables Java programmers to use .Net-style attributes in their code.'
 arch=(any)
 url='http://commons.apache.org/attributes'
 license=(APACHE)
