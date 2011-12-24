@@ -5,7 +5,6 @@ TODO
 * carbon
 * whisper
 * graphite
-* gatling
 * gcviewer
 * pylan
 
