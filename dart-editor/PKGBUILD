@@ -10,6 +10,7 @@ arch=('i686' 'x86_64')
 url="http://www.dartlang.org/docs/getting-started/editor/index-linux.html"
 license=('EPL')
 depends=('java-runtime' 'gtk2')
+install=${pkgname}.install
 changelog=Changelog
 if [[ ${CARCH} = x86_64 ]]; then
   _arch=x86_64 && md5sums=('46b98c9c30fd8201b75ba297ae544ec4')
