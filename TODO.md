@@ -7,7 +7,5 @@ TODO
 * graphite
 * gatling
 * gcviewer
-* geppetto
-* leechr
 * pylan
 
