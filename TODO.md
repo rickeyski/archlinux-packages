@@ -5,6 +5,6 @@ TODO
 * carbon
 * whisper
 * graphite
-* gcviewer
-* pylan
+* gitblit
+* gitlabhq
 
