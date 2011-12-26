@@ -7,4 +7,5 @@ TODO
 * graphite
 * gitblit
 * gitlabhq
+* indefero
 
