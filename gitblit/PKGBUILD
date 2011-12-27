@@ -65,5 +65,5 @@ package() {
 
   msg2 "Install copyright resources in /usr/share/licenses/${pkgname}..."
   install -Dm644 "${srcdir}/LICENSE"     "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
-  ln -s /usr/share/doc/${pkgname}/NOTICE "${pkgdir}/usr/share/licenses/"
+  ln -s /usr/share/doc/${pkgname}/NOTICE "${pkgdir}/usr/share/licenses/${pkgname}/"
 }
