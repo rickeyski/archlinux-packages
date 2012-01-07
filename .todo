@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<todo version="0.1.20">
+    <note priority="medium" time="1325979832">
+        carbon
+    </note>
+    <note priority="medium" time="1325979942">
+        whisper
+    </note>
+    <note priority="medium" time="1325979943">
+        gitlabhq
+    </note>
+    <note priority="medium" time="1325979943">
+        graphite
+    </note>
+    <note priority="medium" time="1325979943">
+        jmxtrans
+    </note>
+    <note priority="medium" time="1325979943">
+        webshag
+    </note>
+    <note priority="medium" time="1325979944">
+        airodump-ng
+    </note>
+    <note priority="medium" time="1325979944">
+        autoscan?
+    </note>
+    <note priority="medium" time="1325979944">
+        joomscan
+    </note>
+    <note priority="medium" time="1325979944">
+        websecurify?
+    </note>
+    <note priority="medium" time="1325979945">
+        beef
+    </note>
+    <note priority="medium" time="1325979945">
+        garbagecat
+    </note>
+    <note priority="medium" time="1325979945">
+        gchisto
+    </note>
+</todo>
