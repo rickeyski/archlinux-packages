@@ -15,12 +15,6 @@
     <note priority="medium" time="1325979943">
         jmxtrans
     </note>
-    <note priority="medium" time="1325979943">
-        webshag
-    </note>
-    <note priority="medium" time="1325979944">
-        airodump-ng
-    </note>
     <note priority="medium" time="1325979944">
         autoscan?
     </note>
@@ -35,5 +29,8 @@
     </note>
     <note priority="medium" time="1325979945">
         gchisto
+    </note>
+    <note priority="medium" time="1325982987">
+        archiva
     </note>
 </todo>
